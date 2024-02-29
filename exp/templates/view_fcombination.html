@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Female Combination</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        img {
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Female Combination</h1>
+    <h2>Shirt ID: {{ fshirt[0] }}</h2>
+    <img src="{{ url_for('uploaded_file', filename=fshirt[1]) }}" alt="Female Shirt" width="100" height="100">
+    <h2>Pant ID: {{ fpant[0] }}</h2>
+    <img src="{{ url_for('uploaded_file', filename=fpant[1]) }}" alt="Female Pant" width="100" height="100">
+</body>
+
+</html>

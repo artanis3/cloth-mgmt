@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display  FEMALE CLOTHS</title>
+</head>
+<body>
+    <h1>Female Clothes</h1>
+    <h2>Shirts</h2>
+    {% for image in fshirt_images %}
+        <img src="{{ url_for('uploaded_file', filename=image) }}" alt="Female Shirt" width="100" height="100">
+    {% endfor %}
+    <h2>Pants</h2>
+    {% for image in fpant_images %}
+        <img src="{{ url_for('uploaded_file', filename=image) }}" alt="Female Pant" width="100" height="100">
+    {% endfor %}
+</body>
+
+
+
+</html>
